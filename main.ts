@@ -40,35 +40,4 @@ basic.forever(function () {
         servos.P0.setAngle(0)
         basic.pause(500)
     }
-    if (input.isGesture(Gesture.Shake)) {
-        music.startMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.Once)
-        basic.showLeds(`
-            . # . # .
-            # # . # #
-            . . . . .
-            . . # . .
-            . # . # .
-            `)
-        basic.showLeds(`
-            # . . . #
-            # # . # #
-            . . . . .
-            . . # . .
-            . # . # .
-            `)
-        basic.showLeds(`
-            . . . . .
-            # # . # #
-            . . . . .
-            . # # # .
-            # . . . #
-            `)
-        basic.showLeds(`
-            # . . . #
-            # # . # #
-            . . . . .
-            . # # # .
-            # . . . #
-            `)
-    }
 })
